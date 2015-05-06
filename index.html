@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app='userProfiles'>
+<head>
+	<title>Users Profiles</title>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js'></script>
+<script src='app.js'></script>
+</head>
+
+<body ng-controller='MainController'>
+
+<div ng-repeat="user in users">
+  <h1>{{user.first_name}} {{user.last_name}}</h1>
+  <img src="{{user.avatar}}">
+  <hr>
+</div>
+
+<script src='controller.js'></script>
+<script src='services.js'></script>
+</body>
+</html>
