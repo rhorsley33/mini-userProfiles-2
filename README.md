@@ -67,7 +67,8 @@
 ``` javascript
 var app = angular.module('userProfiles', [])
 ```
-- REMEMBER: when we put "[]" in our angular.modules declaration, it's telling Angular that we are creating a new module named "userProfiles". If we were to omit the "[]" it would be asking Angular to go and look for a module named "userProfiles"
+- REMEMBER: when we put "[]" in our angular.modules declaration, it's telling Angular that we are creating a new module named "userProfiles". 
+If we were to omit the "[]" it would be asking Angular to go and look for a module named "userProfiles"
 
 - Set up controller.js
   - This is where we create our controller
@@ -146,7 +147,8 @@ app.service('mainService', function() {
 ```
 
 ## Step 4 - Our Service
-Our Service will do most of the apps heavy lifting. We want to keep our controllers as slim as possible. To do that we will need to create a function that delivers our data to our controller.
+Our Service will do most of the apps heavy lifting. We want to keep our controllers as slim as possible. To do that we will need to create a function 
+that delivers our data to our controller.
 - Write a function called "getUsers" that will return all of our user data to the controller
   - Remember: functions made in a service can be tied to the service via the "this" keyword 
 
